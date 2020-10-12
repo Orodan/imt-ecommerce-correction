@@ -1,10 +1,96 @@
-<app-menu></app-menu>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-dark bg-dark" role="navigation">
+  <div class="container">
+      <div class="navbar-header">
+          <a class="navbar-brand" href="#">IMT Ecommerce</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+              <li>
+                  <a href="#">See my basket</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
 
-<div class="app container">
-    <router-outlet></router-outlet>
-    <hr>
+<div class="container">
+
+<header class="jumbotron hero-spacer">
+  <h1>Welcome to IMT Ecommerce</h1>
+  <p>Your basket amounts to ...</p>
+  <p><a class="btn btn-primary btn-large">See my basket</a></p>
+</header>
+
+<hr>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Last products</h2>
+    </div>
+</div>
+<div class="row text-center">
+  <div class="col-md-3 col-sm-6 product-item">
+      <div class="thumbnail">
+          <img src="https://images.punkapi.com/v2/5.png" alt="">
+          <div class="caption">
+              <div class="content">
+                <h3>Avery Brown Dredge - 39$</h3>
+                <p>Bloggers' Imperial Pilsner</p>
+              </div>
+              <p>
+                  <button class="btn btn-primary">Add to basket</button>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6 product-item">
+      <div class="thumbnail">
+          <img src="https://images.punkapi.com/v2/7.png" alt="">
+          <div class="caption">
+              <div class="content">
+                <h3>AB:12 - 12$</h3>
+                <p>Imperial Black Belgian Ale</p>
+              </div>
+              <p>
+                  <button class="btn btn-primary">Add to basket</button>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6 product-item">
+      <div class="thumbnail">
+          <img src="https://images.punkapi.com/v2/10.png" alt="">
+          <div class="caption">
+              <div class="content">
+                <h3>Bramling X - 9$</h3>
+                <p>Single Hop IPA Series - 2011</p>
+              </div>
+              <p>
+                  <button class="btn btn-primary">Add to basket</button>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6 product-item">
+      <div class="thumbnail">
+          <img src="https://images.punkapi.com/v2/15.png" alt="">
+          <div class="caption">
+              <div class="content">
+                <h3>Mixtape 8 - 12,50$</h3>
+                <p>An Epic Fusion Of Old Belgian, American New Wave, And Scotch Whisky</p>
+              </div>
+              <p>
+                  <button class="btn btn-primary">Add to basket</button>
+              </p>
+          </div>
+      </div>
+  </div>
 </div>
 
-<footer class="navbar navbar-light bg-light">
-    <div class="container justify-content-center">Copyright &copy; Your Website 2020</div>
+<hr>
+
+<footer>
+    Copyright &copy; Your Website 2019
 </footer>
+
+</div>
