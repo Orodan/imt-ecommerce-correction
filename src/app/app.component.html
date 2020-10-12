@@ -4,7 +4,7 @@
 
 <header class="jumbotron hero-spacer">
   <h1>{{ title }}</h1>
-  <p>Your basket amounts to ...</p>
+  <p>Your basket amounts to {{ getTotal() }} $</p>
   <p><a class="btn btn-primary btn-large">See my basket</a></p>
 </header>
 
@@ -16,66 +16,13 @@
     </div>
 </div>
 <div class="row text-center">
-  <div class="col-md-3 col-sm-6 product-item">
-      <div class="thumbnail">
-          <img src="https://images.punkapi.com/v2/5.png" alt="">
-          <div class="caption">
-              <div class="content">
-                <h3>Avery Brown Dredge - 39$</h3>
-                <p>Bloggers' Imperial Pilsner</p>
-              </div>
-              <p>
-                  <button class="btn btn-primary">Add to basket</button>
-              </p>
-          </div>
-      </div>
-  </div>
-  <div class="col-md-3 col-sm-6 product-item">
-      <div class="thumbnail">
-          <img src="https://images.punkapi.com/v2/7.png" alt="">
-          <div class="caption">
-              <div class="content">
-                <h3>AB:12 - 12$</h3>
-                <p>Imperial Black Belgian Ale</p>
-              </div>
-              <p>
-                  <button class="btn btn-primary">Add to basket</button>
-              </p>
-          </div>
-      </div>
-  </div>
-  <div class="col-md-3 col-sm-6 product-item">
-      <div class="thumbnail">
-          <img src="https://images.punkapi.com/v2/10.png" alt="">
-          <div class="caption">
-              <div class="content">
-                <h3>Bramling X - 9$</h3>
-                <p>Single Hop IPA Series - 2011</p>
-              </div>
-              <p>
-                  <button class="btn btn-primary">Add to basket</button>
-              </p>
-          </div>
-      </div>
-  </div>
-  <div class="col-md-3 col-sm-6 product-item">
-      <div class="thumbnail">
-          <img src="https://images.punkapi.com/v2/15.png" alt="">
-          <div class="caption">
-              <div class="content">
-                <h3>Mixtape 8 - 12,50$</h3>
-                <p>An Epic Fusion Of Old Belgian, American New Wave, And Scotch Whisky</p>
-              </div>
-              <p>
-                  <button class="btn btn-primary">Add to basket</button>
-              </p>
-          </div>
-      </div>
-  </div>
-</div>
+  <app-product class="col-md-3 col-sm-6" [data]="beers[0]" (addToBasket)="add($event)"></app-product>
+  <app-product class="col-md-3 col-sm-6" [data]="beers[1]" (addToBasket)="add($event)"></app-product>
+  <app-product class="col-md-3 col-sm-6" [data]="beers[2]" (addToBasket)="add($event)"></app-product>
+  <app-product class="col-md-3 col-sm-6" [data]="beers[3]" (addToBasket)="add($event)"></app-product>
 
-<hr>
+  <hr>
 
-<app-footer></app-footer>
+  <app-footer></app-footer>
 
 </div>

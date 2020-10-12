@@ -1,0 +1,14 @@
+<div class="product-item">
+  <div class="thumbnail">
+      <img [src]="data.image_url" alt="">
+      <div class="caption">
+          <div class="content">
+            <h3>{{ data.name }} - {{ data.price }}$</h3>
+            <p>{{ data.tagline }}</p>
+          </div>
+          <p>
+              <button class="btn btn-primary" (click)="onClick(data)">Add to basket</button>
+          </p>
+      </div>
+  </div>
+</div>
