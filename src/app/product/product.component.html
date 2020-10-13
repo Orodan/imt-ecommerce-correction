@@ -1,4 +1,4 @@
-<div class="product-item">
+<div class="product-item" [ngClass]="{ last: data.stock === 1 } ">
   <div class="thumbnail">
       <img [src]="data.image_url" alt="">
       <div class="caption">

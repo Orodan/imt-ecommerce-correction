@@ -16,10 +16,9 @@
     </div>
 </div>
 <div class="row text-center">
-  <app-product class="col-md-3 col-sm-6" [data]="beers[0]" (addToBasket)="add($event)"></app-product>
-  <app-product class="col-md-3 col-sm-6" [data]="beers[1]" (addToBasket)="add($event)"></app-product>
-  <app-product class="col-md-3 col-sm-6" [data]="beers[2]" (addToBasket)="add($event)"></app-product>
-  <app-product class="col-md-3 col-sm-6" [data]="beers[3]" (addToBasket)="add($event)"></app-product>
+  <ng-container *ngFor="let beer of beers">
+    <app-product *ngIf="beer.stock > 0" class="col-md-3 col-sm-6" [data]="beer" (addToBasket)="add($event)"></app-product>
+  </ng-container>
 
   <hr>
 
