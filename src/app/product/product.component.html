@@ -1,14 +1,14 @@
-<div class="product-item" [ngClass]="{ last: data.stock === 1 } ">
-  <div class="thumbnail">
-      <img [src]="data.image_url" alt="">
-      <div class="caption">
-          <div class="content">
-            <h3>{{ data.name }} - {{ data.price }}$</h3>
-            <p>{{ data.tagline }}</p>
-          </div>
-          <p>
-              <button class="btn btn-primary" (click)="onClick(data)">Add to basket</button>
-          </p>
+<mat-card class="product-item" [ngClass]="{ last: data.stock === 1 } ">
+  <img [src]="data.image_url" alt="">
+
+  <mat-card-content>
+      <div class="content">
+        <h3>{{ data.name }} - {{ data.price }}$</h3>
+        <p>{{ data.tagline }}</p>
       </div>
-  </div>
-</div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onClick(data)">Add to basket</button>
+  </mat-card-actions>
+</mat-card>
