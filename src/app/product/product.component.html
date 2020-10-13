@@ -3,7 +3,7 @@
 
   <mat-card-content>
       <div class="content">
-        <h3>{{ data.name }} - {{ data.price }}$</h3>
+        <h3>{{ data.name }} - {{ data.price | currency:'EUR' }}</h3>
         <p>{{ data.tagline }}</p>
       </div>
   </mat-card-content>

@@ -9,7 +9,6 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
 
-
 @NgModule({
     declarations: [
         AppComponent,
