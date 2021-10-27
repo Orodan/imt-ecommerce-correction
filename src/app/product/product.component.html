@@ -1,0 +1,12 @@
+<div class="col-md-3 col-sm-6 product-item">
+  <div class="thumbnail" [ngClass]="{ last: isTheLast() }">
+      <img [src]="data.photo" alt="">
+      <div class="caption">
+          <h3>{{ data.title }} - {{ data.price | currency:'EUR' }}</h3>
+          <p>{{ data.description }}</p>
+          <p>
+              <button mat-raised-button color="primary" (click)="handleClick()">Add to basket</button>
+          </p>
+      </div>
+  </div>
+</div>
